@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>PropMiner</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<script  src="scripts/datacosum.js"></script>
+    <script  src="scripts/cosum/0.js"></script>
+<script  src="scripts/cosum/1.js"></script>
+<script  src="scripts/cosum/2.js"></script>
+<script  src="scripts/cosum/3.js"></script>
+<script  src="scripts/cosum/4.js"></script>
+<script  src="scripts/cosum/5.js"></script>
+<script  src="scripts/cosum/6.js"></script>
+<script  src="scripts/cosum/7.js"></script>
+<script  src="scripts/cosum/8.js"></script>
+<script  src="scripts/cosum/9.js"></script>
+<script  src="scripts/cosum/10.js"></script>
+<script  src="scripts/cosum/11.js"></script>
+<script  src="scripts/cosum/12.js"></script>
+<script  src="scripts/cosum/13.js"></script>
+<script  src="scripts/cosum/14.js"></script>
+<script  src="scripts/cosum/15.js"></script>
+<script  src="scripts/cosum/16.js"></script>
+<script  src="scripts/cosum/17.js"></script>
+<script  src="scripts/cosum/18.js"></script>
+<script  src="scripts/cosum/19.js"></script>
+<script  src="scripts/cosum/20.js"></script>
+<script  src="scripts/cosum/21.js"></script>
+<script  src="scripts/cosum/22.js"></script>
+<script  src="scripts/cosum/23.js"></script>
+<script  src="scripts/cosum/24.js"></script>
+<script  src="scripts/cosum/25.js"></script>
+<script  src="scripts/cosum/26.js"></script>
+<script  src="scripts/cosum/27.js"></script>
+<script  src="scripts/cosum/28.js"></script>
+<script  src="scripts/cosum/29.js"></script>
+<script  src="scripts/cosum/30.js"></script>
+<script  src="scripts/cosum/31.js"></script>
+<script  src="scripts/cosum/32.js"></script>
+<script  src="scripts/cosum/33.js"></script>
+<script  src="scripts/cosum/34.js"></script>
+<script  src="scripts/cosum/35.js"></script>
+<script  src="scripts/cosum/36.js"></script>
+<script  src="scripts/cosum/37.js"></script>
+<script  src="scripts/cosum/38.js"></script>
+<script  src="scripts/cosum/39.js"></script>
+<script  src="scripts/cosum/40.js"></script>
+<script  src="scripts/cosum/41.js"></script>
+<script  src="scripts/cosum/42.js"></script>
+<script  src="scripts/cosum/43.js"></script>
+<script  src="scripts/cosum/44.js"></script>
+<script  src="scripts/cosum/45.js"></script>
+<script  src="scripts/cosum/46.js"></script>
+<script  src="scripts/cosum/47.js"></script>
+<script  src="scripts/cosum/48.js"></script>
+<script  src="scripts/cosum/49.js"></script>
+<script  src="scripts/cosum/50.js"></script>
+<script  src="scripts/cosum/51.js"></script>
+<script  src="scripts/cosum/52.js"></script>
+<script  src="scripts/cosum/53.js"></script>
+<script  src="scripts/cosum/54.js"></script>
+<script  src="scripts/cosum/55.js"></script>
+<script  src="scripts/cosum/56.js"></script>
+<script  src="scripts/cosum/57.js"></script>
+<script  src="scripts/cosum/58.js"></script>
+<script  src="scripts/cosum/59.js"></script>
+<script  src="scripts/cosum/60.js"></script>
+<script  src="scripts/cosum/61.js"></script>
+<script  src="scripts/cosum/62.js"></script>
+<script  src="scripts/cosum/63.js"></script>
+<script  src="scripts/cosum/64.js"></script>
+<script  src="scripts/cosum/65.js"></script>
+<script  src="scripts/cosum/66.js"></script>
+<script  src="scripts/cosum/67.js"></script>
+<script  src="scripts/cosum/68.js"></script>
+<script  src="scripts/cosum/69.js"></script>
+<script  src="scripts/cosum/70.js"></script>
+<script  src="scripts/cosum/71.js"></script>
+<script  src="scripts/cosum/72.js"></script>
+<script  src="scripts/cosum/73.js"></script>
+<script  src="scripts/cosum/74.js"></script>
+<script  src="scripts/cosum/75.js"></script>
+<script  src="scripts/handleCodeSum.js"></script>
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body onload="loadBody2();">
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup" style="text-align:center;">
+      <h1><b>PropMiner: Enhanced Code and Comment Representation for Code Search and Code Summarization</b></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a  href="index.html">Introduction</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a href="demoCodeSearch.html">Demo - Code Search</a></li>
+        <li ><a style="color:#FF9900; background-color:#FFFFFF;" href="demoCodeSum.html">Demo - Code Summarization</a></li>
+        <!-- <li><a href="evaluation.html">Evaluation</a></li> -->
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <section id="slider">
+        <form class="" action="#" method="post">
+        <h3>Code Summarization</h3>
+        <p>For Code Summarization, we do an experiment on the dataset of <b>7584</b> pairs of comment and code of the <b>TLCodeSum</b> dataset in the clean version of CAT benchmark (<a  href="https://arxiv.org/abs/2207.05579">See paper</a>). We evaluate the effectiveness of PropMiner to the original embedding of GraphCodeBERT in this evaluation. We use Top-K accuracy as the evaluation metric for each code search phrase. In each query and candidate, we display them by single line (we mark '\n' character as ' _EL_ ' character).</p>
+        <p><b>Result (RQ2)</b>: GraphCodeBERT+PropMiner won <b>1112/7584</b> cases, while the original GraphCodeBERT won <b>450/7584</b> cases, leads our Mean Reciprocal Rank to be 74.65% over 76.65% of GraphCodeBERT on TLCodeSum dataset</p>
+        <p>We use <a  href="https://github.com/microsoft/CodeBERT/issues/112">this tutorial</a> for extraction comments and code snippets' embedding of GraphCodeBERT. The default dimension of vector provided by GrraphCodeBERT is <b>768</b></p>
+        <p>You can input the text as code snippet on the input box, or you can load the cached  queries we analyzed by two combo boxes above. In the query's result, we will show you the results of the cached query that is the most similar to your input.</p>
+        <div>
+
+                <table>
+                    <tr>
+                        <td>Input query as code snippet: <input id="btnSearch" type="button" name="btnSearch" onclick="performSearch();" value="Search"/></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="txtInputQuery" name="idInputQuery" rows="10" cols="115"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="color:green;">Queries that GraphCodeBERT+PropMiner won: <input id="btnViewWon" type="button" name="btnViewWon" onclick="showCaseWon();" value="View Results"/><br/>
+                            <select name="selectWon" id="selectWon" style="max-width:900px;">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color:red;">Queries that original GraphCodeBERT won: <input id="btnViewLost" type="button" name="btnViewLost" onclick="showCaseLost();" value="View Results"/><br/>
+                            <select name="selectLost" id="selectLost" style="max-width:900px;">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Parts of Results:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="txtResultGuide" name="idSearchResult" rows="10" cols="115" readonly="True" ></textarea>
+                            <!-- <iframe id="iframeResult" style="overflow-y:hidden;overflow-x:scroll;" src="" width="920px" height="800"></iframe> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Search Results (with Steps by Steps):</td>
+                    </tr>
+                    <tr>
+                        <td>View query tree (Abstract Syntax Tree) of step 2.1. at <a id="linkViewTree" href="#">here</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="txtSearchResult" name="txtSearchResult" rows="50" cols="115" wrap='off' readonly="True"></textarea>
+<!--                            <iframe id="iframeResult" style="overflow-y:hidden;overflow-x:scroll;" src="" width="920px" height="800"></iframe>-->
+                        </td>
+                    </tr>
+                </table>
+
+        <div>
+            </form>
+    </section>
+  </div>
+</div>
+<!-- footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

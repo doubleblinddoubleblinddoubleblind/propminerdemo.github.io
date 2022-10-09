@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>PropMiner</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+    <script  src="scripts/datacose.js"></script>
+    <script  src="scripts/cose/0.js"></script>
+    <script  src="scripts/cose/1.js"></script>
+    <script  src="scripts/cose/2.js"></script>
+    <script  src="scripts/cose/3.js"></script>
+    <script  src="scripts/cose/4.js"></script>
+    <script  src="scripts/cose/5.js"></script>
+    <script  src="scripts/cose/6.js"></script>
+    <script  src="scripts/cose/7.js"></script>
+    <script  src="scripts/cose/8.js"></script>
+    <script  src="scripts/cose/9.js"></script>
+    <script  src="scripts/cose/10.js"></script>
+    <script  src="scripts/cose/11.js"></script>
+    <script  src="scripts/cose/12.js"></script>
+    <script  src="scripts/cose/13.js"></script>
+    <script  src="scripts/cose/14.js"></script>
+    <script  src="scripts/cose/15.js"></script>
+    <script  src="scripts/cose/16.js"></script>
+    <script  src="scripts/cose/17.js"></script>
+    <script  src="scripts/cose/18.js"></script>
+    <script  src="scripts/cose/19.js"></script>
+    <script  src="scripts/cose/20.js"></script>
+    <script  src="scripts/cose/21.js"></script>
+    <script  src="scripts/cose/22.js"></script>
+    <script  src="scripts/cose/23.js"></script>
+    <script  src="scripts/cose/24.js"></script>
+    <script  src="scripts/cose/25.js"></script>
+    <script  src="scripts/cose/26.js"></script>
+    <script  src="scripts/cose/27.js"></script>
+    <script  src="scripts/cose/28.js"></script>
+    <script  src="scripts/cose/29.js"></script>
+    <script  src="scripts/cose/30.js"></script>
+    <script  src="scripts/cose/31.js"></script>
+    <script  src="scripts/cose/32.js"></script>
+    <script  src="scripts/cose/33.js"></script>
+    <script  src="scripts/cose/34.js"></script>
+    <script  src="scripts/cose/35.js"></script>
+    <script  src="scripts/cose/36.js"></script>
+    <script  src="scripts/cose/37.js"></script>
+    <script  src="scripts/cose/38.js"></script>
+    <script  src="scripts/cose/39.js"></script>
+    <script  src="scripts/cose/40.js"></script>
+    <script  src="scripts/cose/41.js"></script>
+    <script  src="scripts/cose/42.js"></script>
+    <script  src="scripts/cose/43.js"></script>
+    <script  src="scripts/cose/44.js"></script>
+    <script  src="scripts/cose/45.js"></script>
+    <script  src="scripts/cose/46.js"></script>
+    <script  src="scripts/cose/47.js"></script>
+    <script  src="scripts/cose/48.js"></script>
+    <script  src="scripts/cose/49.js"></script>
+    <script  src="scripts/cose/50.js"></script>
+    <script  src="scripts/cose/51.js"></script>
+    <script  src="scripts/cose/52.js"></script>
+    <script  src="scripts/cose/53.js"></script>
+    <script  src="scripts/cose/54.js"></script>
+    <script  src="scripts/cose/55.js"></script>
+    <script  src="scripts/cose/56.js"></script>
+    <script  src="scripts/cose/57.js"></script>
+    <script  src="scripts/cose/58.js"></script>
+    <script  src="scripts/cose/59.js"></script>
+    <script  src="scripts/cose/60.js"></script>
+    <script  src="scripts/cose/61.js"></script>
+    <script  src="scripts/cose/62.js"></script>
+    <script  src="scripts/cose/63.js"></script>
+    <script  src="scripts/cose/64.js"></script>
+    <script  src="scripts/cose/65.js"></script>
+    <script  src="scripts/cose/66.js"></script>
+    <script  src="scripts/cose/67.js"></script>
+    <script  src="scripts/cose/68.js"></script>
+    <script  src="scripts/cose/69.js"></script>
+    <script  src="scripts/cose/70.js"></script>
+    <script  src="scripts/cose/71.js"></script>
+    <script  src="scripts/cose/72.js"></script>
+    <script  src="scripts/cose/73.js"></script>
+    <script  src="scripts/cose/74.js"></script>
+    <script  src="scripts/cose/75.js"></script>
+    <script  src="scripts/handleCodeSearch.js"></script>
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body onload="loadBody2();">
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup" style="text-align:center;">
+      <h1><b>PropMiner: Enhanced Code and Comment Representation for Code Search and Code Summarization</b></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a  href="index.html">Introduction</a></li>
+        <li><a href="approach.html">Approach</a></li>
+        <li><a style="color:#FF9900; background-color:#FFFFFF;" href="demoCodeSearch.html">Demo - Code Search</a></li>
+        <li ><a href="demoCodeSum.html">Demo - Code Summarization</a></li>
+        <!-- <li><a href="evaluation.html">Evaluation</a></li> -->
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <section id="slider">
+        <form class="" action="#" method="post">
+        <h3>Code Search</h3>
+        <p>For Code Search, we do an experiment on the dataset of <b>7584</b> pairs of comment and code of the <b>TLCodeSum</b> dataset in the clean version of CAT benchmark (<a  href="https://arxiv.org/abs/2207.05579">See paper</a>). We evaluate the effectiveness of PropMiner to the original embedding of GraphCodeBERT in this evaluation. We use Top-K accuracy as the evaluation metric for each code search phrase. In each query and candidate, we display them by single line (we mark '\n' character as ' _EL_ ' character).</p>
+        <p><b>Result (RQ1)</b>: GraphCodeBERT+PropMiner won <b>929/7584</b> cases, while the original GraphCodeBERT won <b>390/7584</b> cases, leads our Mean Reciprocal Rank to be 60.82\ over 59.35% of GraphCodeBERT on TLCodeSum dataset</p>
+        <p>We use <a  href="https://github.com/microsoft/CodeBERT/issues/112">this tutorial</a> for extraction comments and code snippets' embedding of GraphCodeBERT. The default dimension of vector provided by GrraphCodeBERT is <b>768</b></p>
+        <p>You can input the text as code comment on the input box, or you can load the cached  queries we analyzed by two combo boxes above. In the query's result, we will show you the results of the cached query that is the most similar to your input.</p>
+        <div>
+
+                <table>
+                    <tr>
+                        <td>Input query as comment: <input id="btnSearch" type="button" name="btnSearch" onclick="performSearch();" value="Search"/></td>
+                    </tr>
+                    <tr>
+                        <td><textarea id="txtInputQuery" name="idInputQuery" rows="10" cols="115"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="color:green;">Queries that GraphCodeBERT+PropMiner won: <input id="btnViewWon" type="button" name="btnViewWon" onclick="showCaseWon();" value="View Results"/><br/>
+                            <select name="selectWon" id="selectWon" style="max-width:900px;">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color:red;">Queries that original GraphCodeBERT won: <input id="btnViewLost" type="button" name="btnViewLost" onclick="showCaseLost();" value="View Results"/><br/>
+                            <select name="selectLost" id="selectLost" style="max-width:900px;">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Parts of Results:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="txtResultGuide" name="idSearchResult" rows="10" cols="115" readonly="True" ></textarea>
+                            <!-- <iframe id="iframeResult" style="overflow-y:hidden;overflow-x:scroll;" src="" width="920px" height="800"></iframe> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Search Results (with Steps by Steps):</td>
+                    </tr>
+                    <tr>
+                        <td>View query tree (Natural Language Parse Tree) of step 2.1. at <a id="linkViewTree" href="#">here</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <textarea id="txtSearchResult" name="txtSearchResult" rows="50" cols="115" wrap='off' readonly="True"></textarea>
+<!--                            <iframe id="iframeResult" style="overflow-y:hidden;overflow-x:scroll;" src="" width="920px" height="800"></iframe>-->
+                        </td>
+                    </tr>
+                </table>
+
+        <div>
+            </form>
+    </section>
+  </div>
+</div>
+<!-- footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

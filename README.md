@@ -1,1 +1,1 @@
-# propminerdemo.github.io
+# prop.github.io
